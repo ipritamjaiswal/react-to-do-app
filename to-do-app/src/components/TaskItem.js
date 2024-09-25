@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TaskContext } from "../context/TaskContext";
 
-const TaskItem = () => {
+const TaskItem = ({ task, index}) => {
     const { toggleTaskCompletion, deleteTask, moveTaskUp, moveTaskDown } = useContext(TaskContext);
 
     return (
